@@ -1,0 +1,13 @@
+[package]
+name = "graph_theory_rust"
+version = "0.1.0"
+authors = ["Lyr-7D1h <lyr-7d1h@pm.me>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[[bin]]
+name = "adjacency_matrix"
+path = "./adjacency_matrix.rs"
