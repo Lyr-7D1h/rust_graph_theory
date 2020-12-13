@@ -11,3 +11,7 @@ edition = "2018"
 [[bin]]
 name = "adjacency_matrix"
 path = "./adjacency_matrix.rs"
+
+[[bin]]
+name = "bfs"
+path = "./bfs.rs"

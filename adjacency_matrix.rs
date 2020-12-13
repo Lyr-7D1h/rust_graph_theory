@@ -17,7 +17,7 @@ fn main() {
     let nnodes = input[0];
     let nedges = input[1];
 
-    let mut amatrix = vec![vec![0; nnodes]; nnodes];
+    let mut amatrix: Vec<Vec<usize>> = vec![vec![]; nnodes];
 
     for _ in 0..nedges {
         let position = read_input();
