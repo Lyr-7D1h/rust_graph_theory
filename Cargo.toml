@@ -13,5 +13,8 @@ name = "adjacency_matrix"
 path = "./adjacency_matrix.rs"
 
 [[bin]]
+name = "dfs"
+path = "./dfs.rs"
+[[bin]]
 name = "bfs"
 path = "./bfs.rs"
