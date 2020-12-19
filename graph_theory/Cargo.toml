@@ -11,7 +11,12 @@ edition = "2018"
 [[bin]]
 name = "adjacency_matrix"
 path = "./adjacency_matrix.rs"
-
+[[bin]]
+name = "wfi"
+path = "./wfi.rs"
+[[bin]]
+name = "mst"
+path = "./mst.rs"
 [[bin]]
 name = "dfs"
 path = "./dfs.rs"
