@@ -12,6 +12,9 @@ edition = "2018"
 name = "adjacency_matrix"
 path = "./adjacency_matrix.rs"
 [[bin]]
+name = "dfs_fill"
+path = "./dfs_fill.rs"
+[[bin]]
 name = "dijkstra"
 path = "./dijkstra.rs"
 [[bin]]
