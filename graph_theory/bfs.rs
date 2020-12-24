@@ -4,6 +4,7 @@ fn read_input() -> Vec<usize> {
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap(); // Reading input from STDIN
                                                 // println!("{:?}", input);
+    
     input = input.trim().to_string();
     let input: Vec<&str> = input.split(" ").collect();
     input

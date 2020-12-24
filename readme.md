@@ -9,6 +9,8 @@ Following https://www.hackerearth.com/practice/algorithms/graphs/graph-represent
 
 # Run
 
+You need [watchexec](https://github.com/watchexec/watchexec)
+
 will run the rs file with given input:
 
 ```bash

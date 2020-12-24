@@ -12,6 +12,9 @@ edition = "2018"
 name = "adjacency_matrix"
 path = "./adjacency_matrix.rs"
 [[bin]]
+name = "biconnected"
+path = "./biconnected.rs"
+[[bin]]
 name = "bridges_apoints"
 path = "./bridges_apoints.rs"
 [[bin]]

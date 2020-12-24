@@ -1,15 +1,11 @@
-#!/usr/bin/env node
-const { exec } = require("child_process");
-const path = require("path");
+#!/bin/bash
 
-if (process.argv.length < 3) {
-  console.log("./run {filename without extension}");
-  process.exit();
-}
+if [ "$#" -ne 1 ]; then
+  echo "./run {filename without extension}"
+  exit 1
+fi
 
-const file = path.basename(process.argv[2]);
+file=$1
 
-exec(`cd graph_theory; cat ${file}_input | cargo run --bin=${file}`, (err, stdout, stderr) => {
-  console.log(stdout);
-  console.log(stderr);
-});
+cd graph_theory
+cat "${file}_input" | cargo run --bin=$file
