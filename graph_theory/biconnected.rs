@@ -73,7 +73,7 @@ fn dfs(
       if parent[node].is_none() && adjlist[node].len() <= 1 {
         continue;
       }
-      // If grand parent does not exists and child earliest discovery is later than discovery of parent
+      // If grand parent does not exists and child earliest discovery is later than discovery of parent (is not a back edge)
       if parent[node].is_some() && low[*child] < disc[node] {
         continue;
       }
