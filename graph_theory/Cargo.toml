@@ -24,11 +24,14 @@ path = "./dfs_fill.rs"
 name = "dijkstra"
 path = "./dijkstra.rs"
 [[bin]]
-name = "mst"
-path = "./mst.rs"
+name = "prim"
+path = "./prim.rs"
 [[bin]]
 name = "dfs"
 path = "./dfs.rs"
+[[bin]]
+name = "kosaraju"
+path = "./kosaraju.rs"
 [[bin]]
 name = "bfs"
 path = "./bfs.rs"
