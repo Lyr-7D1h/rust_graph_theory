@@ -52,7 +52,7 @@ fn build_graph(amount_nodes: usize, amount_edges: usize) -> Graph {
   alist
 }
 
-// Dijkstra's Algorithm
+// Dijkstra's Algorithm for finding all shortests paths for root
 fn dijkstra(graph: Graph) -> Vec<usize> {
   let mut heap = BinaryHeap::new();
   let mut distances = vec![usize::MAX; graph.len()];

@@ -24,6 +24,9 @@ path = "./dfs_fill.rs"
 name = "dijkstra"
 path = "./dijkstra.rs"
 [[bin]]
+name = "hamiltonian"
+path = "./hamiltonian.rs"
+[[bin]]
 name = "topological_sort"
 path = "./topological_sort.rs"
 [[bin]]
