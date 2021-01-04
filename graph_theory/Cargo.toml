@@ -24,6 +24,9 @@ path = "./dfs_fill.rs"
 name = "dijkstra"
 path = "./dijkstra.rs"
 [[bin]]
+name = "dinic"
+path = "./dinic.rs"
+[[bin]]
 name = "hamiltonian"
 path = "./hamiltonian.rs"
 [[bin]]

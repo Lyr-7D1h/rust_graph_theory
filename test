@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+  echo "./run {filename without extension}"
+  exit 1
+fi
+
+file=$1
+
+cd graph_theory
+cat "${file}_input" | cargo test --bin=$file -- --show-output

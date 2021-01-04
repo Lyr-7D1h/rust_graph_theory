@@ -13,6 +13,7 @@ fn read_input() -> Vec<usize> {
     })
     .collect()
 }
+
 /// Build an undirected adjacency matrix
 fn build_amatrix(amount_nodes: usize, amount_edges: usize) -> Vec<Vec<bool>> {
   let mut amatrix = vec![vec![false; amount_nodes]; amount_nodes];
@@ -24,19 +25,6 @@ fn build_amatrix(amount_nodes: usize, amount_edges: usize) -> Vec<Vec<bool>> {
   }
 
   amatrix
-}
-
-/// Build an undirected adjacency list
-fn build_adjlist(amount_nodes: usize, amount_edges: usize) -> Vec<Vec<usize>> {
-  let mut alist = vec![vec![]; amount_nodes];
-
-  for _ in 0..amount_edges {
-    let position = read_input();
-    alist[position[0]].push(position[1]);
-    alist[position[1]].push(position[0]);
-  }
-
-  alist
 }
 
 /// Mutate permutation to the next greatest lexicographic order and returns boolean if succeeded or not
@@ -163,9 +151,7 @@ fn main() {
   let input = read_input();
   let amount_nodes = input[0];
   let amount_edges = input[1];
-  // let adjlist = build_adjlist(amount_nodes, amount_edges);
   let amatrix = build_amatrix(amount_nodes, amount_edges);
-  // println!("{:?}", amatrix);
 
   // let is_hamil = is_hamiltonian_brute(&amatrix);
   // let is_hamil = is_hamiltonian_dp(&amatrix);
