@@ -30,6 +30,9 @@ path = "./dinic.rs"
 name = "hamiltonian"
 path = "./hamiltonian.rs"
 [[bin]]
+name = "hungarian"
+path = "./hungarian.rs"
+[[bin]]
 name = "topological_sort"
 path = "./topological_sort.rs"
 [[bin]]

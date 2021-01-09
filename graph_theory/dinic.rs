@@ -23,6 +23,7 @@ struct Edge {
 }
 
 #[derive(Debug, Clone)]
+/// Risidual Graph
 struct Graph {
     size: usize,
     adjlist: Vec<Vec<Edge>>,
@@ -85,6 +86,7 @@ impl Graph {
         }
     }
 
+    /// Send flow over an augmentation path (non-blocking forward/simple path)
     fn send_flow(
         &mut self,
         node: usize,
@@ -126,8 +128,6 @@ impl Graph {
         while self.bfs(source, sink) {
             let mut edges_visited = vec![0; self.size];
 
-            // println!("{:?}", self.adjlist);
-
             while let Some(i) = self.send_flow(source, 1, sink, &mut edges_visited) {
                 total += i;
             }
@@ -156,7 +156,6 @@ fn test() {
     let unique_paths_limit = data[2] as i32;
 
     let unique_paths = rgraph.dinic_max_flow(source, sink);
-    println!("{:?}", unique_paths);
 
     if unique_paths > unique_paths_limit {
         println!("YES");
