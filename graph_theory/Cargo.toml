@@ -30,6 +30,9 @@ path = "./dinic.rs"
 name = "hamiltonian"
 path = "./hamiltonian.rs"
 [[bin]]
+name = "stoer_wagner"
+path = "./stoer_wagner.rs"
+[[bin]]
 name = "hungarian"
 path = "./hungarian.rs"
 [[bin]]

@@ -26,7 +26,7 @@ fn build_matrix(size: usize) -> Vec<Vec<usize>> {
     matrix
 }
 
-/// NOTE: not fully working
+/// NOTE: not fully working - not finishing due to time constraints
 /// Using Adjacancy Matrix Solve from: https://brilliant.org/wiki/hungarian-matching/
 /// And https://brc2.com/the-algorithm-workshop/
 fn hungarian(matrix: Vec<Vec<usize>>, size: usize) -> usize {
